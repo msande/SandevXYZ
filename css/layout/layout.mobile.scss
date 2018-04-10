@@ -1,0 +1,38 @@
+
+@media screen and (max-width: $mobile-width) {
+
+	nav {
+		.navbar-nav {
+			display: block;
+		}
+
+		.navbar-toggle {
+			margin-right: 25px;
+		}
+
+
+		.logo {
+			width: 200px;
+		}
+
+		ul.menu {
+			display: none;
+		}
+
+		ul.social {
+			top: 8px;
+			right: 55px;
+			height: inherit;
+			line-height: inherit;
+		}
+	}
+
+	#hero {
+		height: 600px;
+
+		.hero-content {
+			background-size: contain;
+			background-position: center 253px;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+
+#page {
+	/*margin-top: 50px;*/
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+
+	div.no-spacing {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+
+.container-fluid{
+	padding-left: 0;
+	padding-right: 0;
+}
