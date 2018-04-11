@@ -9,9 +9,6 @@
 body {
   /*min-height: 200vh;*/ }
 
-#page {
-  /*margin-top: 50px;*/ }
-
 .row {
   position: relative;
   margin-left: 0;
@@ -30,12 +27,6 @@ body {
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
-
-.content p {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.2em;
-  padding-bottom: 10px; }
 
 nav {
   position: relative;
@@ -105,9 +96,8 @@ body {
   margin: 0; }
 
 #hero {
-  /*height: 100vh;*/
   height: 880px;
-  background-image: url("/images/bg.png");
+  background-image: url("/images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -131,6 +121,11 @@ body {
   background-position: center top;
   max-width: 100%;
   padding: 0 2em; }
+  .content p {
+    color: #fff;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    padding-bottom: 10px; }
   .content .headline-wrapper {
     position: relative; }
     .content .headline-wrapper ::before,
@@ -172,6 +167,17 @@ body {
     margin: 0; }
     .content .videos .row > div .youtube-wrapper {
       padding: 30px; }
+    .content .videos .row > div .youtube-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 51%; }
+      .content .videos .row > div .youtube-container iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0; }
   .content #poker .youtube-container {
     -webkit-box-shadow: 0px 0px 41px 3px #177a4d;
     -moz-box-shadow: 0px 0px 41px 3px #177a4d;
@@ -180,17 +186,6 @@ body {
     -webkit-box-shadow: 0px 0px 41px 3px #4c2164;
     -moz-box-shadow: 0px 0px 41px 3px #4c2164;
     box-shadow: 0px 0px 41px 3px #4c2164; }
-  .content .youtube-container {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 51%; }
-    .content .youtube-container iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0; }
 
 footer {
   background-color: #000; }
@@ -212,10 +207,6 @@ a.btn:active {
 
 .horizontal-align {
   text-align: center; }
-
-@media screen and (max-width: 1240px) {
-  #page {
-    /*padding: 0 .75em;*/ } }
 
 @media screen and (min-width: 992px) {
   .vertical-align {

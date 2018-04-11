@@ -4,11 +4,9 @@ body {
 	margin: 0;
 }
 
-
 #hero {
-	/*height: 100vh;*/
 	height: 880px;
-	background-image: url('/images/bg.png');
+	background-image: url('/images/bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100vw;
@@ -35,6 +33,13 @@ body {
 	background-position: center top;
 	max-width: 100%;
 	padding: 0 2em;
+
+	p {
+		color: $copy-color;
+		line-height: $copy-line-height;
+		font-size: $copy-font-size;
+		padding-bottom: $copy-padding-bottom;
+	}
 
 	.headline-wrapper {
 		position: relative;
@@ -99,6 +104,21 @@ body {
 				.youtube-wrapper {
 					padding: 30px;
 				}
+
+				.youtube-container {
+					position: relative;
+					width: 100%;
+					height: 0;
+					padding-bottom: 51%;
+
+					iframe {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						left: 0;
+						top: 0;
+					}
+				}
 			}
 		}
 	}
@@ -116,21 +136,6 @@ body {
 			-webkit-box-shadow: 0px 0px 41px 3px rgba(76,33,100,1);
 			-moz-box-shadow: 0px 0px 41px 3px rgba(76,33,100,1);
 			box-shadow: 0px 0px 41px 3px rgba(76,33,100,1);
-		}
-	}
-
-	.youtube-container {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding-bottom: 51%;
-
-		iframe {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			left: 0;
-			top: 0;
 		}
 	}
 }
@@ -159,25 +164,4 @@ a.btn:active {
 
 .horizontal-align {
 	text-align: center;
-}
-
-
-
-@media screen and (max-width: $layout-width) {
-	#page {
-		/*padding: 0 .75em;*/
-	}
-}
-
-@media screen and (min-width: $desktop-width) {
-	.vertical-align {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.vertical-align > [class^="col-"],
-	.vertical-align > [class*=" col-"] {
-		display: flex;
-		align-items: center;
-	}
 }
