@@ -70,6 +70,7 @@ body {
 			background-repeat: no-repeat;
 			background-size: contain;
 			background-position: center;
+			margin-bottom: 50px;
 		}
 
 		.crytpo-headline {
@@ -84,7 +85,83 @@ body {
 			background-image: url('/images/drones.png');
 		}
 	}
+
+	.videos {
+		.row {
+			> div.btn-spacer {
+				padding: 70px 0;
+			}
+
+			> div {
+				padding: 0;
+				margin: 0;
+
+				.youtube-wrapper {
+					padding: 30px;
+				}
+			}
+		}
+	}
+
+	#poker {
+		.youtube-container {
+			-webkit-box-shadow: 0px 0px 41px 3px rgba(23,122,77,1);
+			-moz-box-shadow: 0px 0px 41px 3px rgba(23,122,77,1);
+			box-shadow: 0px 0px 41px 3px rgba(23,122,77,1);
+		}
+	}
+
+	#drones {
+		.youtube-container {
+			-webkit-box-shadow: 0px 0px 41px 3px rgba(76,33,100,1);
+			-moz-box-shadow: 0px 0px 41px 3px rgba(76,33,100,1);
+			box-shadow: 0px 0px 41px 3px rgba(76,33,100,1);
+		}
+	}
+
+	.youtube-container {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: 51%;
+
+		iframe {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+		}
+	}
 }
+
+footer {
+	background-color: $bg-footer-color;
+
+	div {
+		padding: 1em 0;
+		text-align: center;
+		font-size: 1.25em;
+		line-height: 1.25em;
+		color: $footer-copy-color;
+	}
+}
+
+a.btn:link,
+a.btn:visited,
+a.btn:hover,
+a.btn:active {
+	background-color: $bg-btn-color;
+	color: $btn-color;
+	padding: 20px 35px;
+	border-radius: 0;
+}
+
+.horizontal-align {
+	text-align: center;
+}
+
+
 
 @media screen and (max-width: $layout-width) {
 	#page {
@@ -93,7 +170,14 @@ body {
 }
 
 @media screen and (min-width: $desktop-width) {
-	body {
-		/*background-color: $orange;*/
+	.vertical-align {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.vertical-align > [class^="col-"],
+	.vertical-align > [class*=" col-"] {
+		display: flex;
+		align-items: center;
 	}
 }

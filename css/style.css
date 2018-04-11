@@ -31,15 +31,6 @@ body {
   padding-left: 0;
   padding-right: 0; }
 
-.vertical-align {
-  display: flex;
-  flex-direction: row; }
-
-.vertical-align > [class^="col-"],
-.vertical-align > [class*=" col-"] {
-  display: flex;
-  align-items: center; }
-
 .content p {
   color: #fff;
   line-height: 1.5em;
@@ -166,21 +157,74 @@ body {
       background-image: url("/images/crypto.png");
       background-repeat: no-repeat;
       background-size: contain;
-      background-position: center; }
+      background-position: center;
+      margin-bottom: 50px; }
     .content .headline-wrapper .crytpo-headline {
       background-image: url("/images/crypto.png"); }
     .content .headline-wrapper .poker-headline {
       background-image: url("/images/poker.png"); }
     .content .headline-wrapper .drones-headline {
       background-image: url("/images/drones.png"); }
+  .content .videos .row > div.btn-spacer {
+    padding: 70px 0; }
+  .content .videos .row > div {
+    padding: 0;
+    margin: 0; }
+    .content .videos .row > div .youtube-wrapper {
+      padding: 30px; }
+  .content #poker .youtube-container {
+    -webkit-box-shadow: 0px 0px 41px 3px #177a4d;
+    -moz-box-shadow: 0px 0px 41px 3px #177a4d;
+    box-shadow: 0px 0px 41px 3px #177a4d; }
+  .content #drones .youtube-container {
+    -webkit-box-shadow: 0px 0px 41px 3px #4c2164;
+    -moz-box-shadow: 0px 0px 41px 3px #4c2164;
+    box-shadow: 0px 0px 41px 3px #4c2164; }
+  .content .youtube-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%; }
+    .content .youtube-container iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0; }
+
+footer {
+  background-color: #000; }
+  footer div {
+    padding: 1em 0;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.25em;
+    color: #424242; }
+
+a.btn:link,
+a.btn:visited,
+a.btn:hover,
+a.btn:active {
+  background-color: #2699fb;
+  color: #fff;
+  padding: 20px 35px;
+  border-radius: 0; }
+
+.horizontal-align {
+  text-align: center; }
 
 @media screen and (max-width: 1240px) {
   #page {
     /*padding: 0 .75em;*/ } }
 
 @media screen and (min-width: 992px) {
-  body {
-    /*background-color: $orange;*/ } }
+  .vertical-align {
+    display: flex;
+    flex-direction: row; }
+  .vertical-align > [class^="col-"],
+  .vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center; } }
 
 @media screen and (max-width: 991px) {
   #hero .hero-content {
@@ -198,10 +242,15 @@ body {
       background-image: url(/images/separator.png);
       background-repeat: no-repeat;
       background-size: 100% 31px;
-      width: 100%;
+      width: calc(100% + 50px);
       height: 31px;
       left: 0;
-      bottom: -40px; } }
+      bottom: -40px;
+      margin: 0 -25px; }
+    .content .headline-wrapper .headline {
+      margin-bottom: 10px; }
+  .content .youtube-wrapper {
+    margin: 1em 0; } }
 
 @media screen and (max-width: 767px) {
   nav .navbar-nav {
@@ -221,5 +270,12 @@ body {
     height: 600px; }
     #hero .hero-content {
       background-size: contain;
-      background-position: center 253px; } }
+      background-position: center 253px; }
+  .content .videos .row > div.btn-spacer {
+    padding: 20px 0 55px 0; }
+  .content .videos .row > div {
+    padding: 0;
+    margin: 0; }
+    .content .videos .row > div .youtube-wrapper {
+      padding: 15px; } }
 

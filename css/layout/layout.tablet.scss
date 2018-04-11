@@ -23,11 +23,20 @@
 				background-image: url(/images/separator.png);
 				background-repeat: no-repeat;
 				background-size: 100% 31px;
-				width: 100%;
+				width: calc(100% + 50px);
 				height: 31px;
 				left: 0;
 				bottom: -40px;
+				margin: 0 -25px;
 			}
+
+			.headline{
+				margin-bottom: 10px;
+			}
+		}
+
+		.youtube-wrapper{
+			margin: 1em 0;
 		}
 	}
 }
