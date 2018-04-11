@@ -36,19 +36,24 @@
 		}
 	}
 
-	.content {
-		.videos {
-			.row {
-				> div.btn-spacer {
-					padding: 20px 0 55px 0;
-				}
+	.content-wrapper {
+		max-width: 100%;
 
-				> div {
-					padding: 0;
-					margin: 0;
+		.content {
+			.content-container {
 
-					.youtube-wrapper {
-						padding: 15px;
+				.row {
+					> div.btn-spacer {
+						padding: 20px 0 0 0;
+					}
+
+					> div {
+						padding: 0;
+						margin: 0;
+
+						.youtube-wrapper {
+							padding: 15px;
+						}
 					}
 				}
 			}
