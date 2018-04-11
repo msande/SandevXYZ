@@ -5,4 +5,29 @@
 			background-size: contain;
 		}
 	}
+
+	.content {
+		.headline-wrapper {
+			position: relative;
+			margin-bottom: 40px;
+
+			::before,
+			::after {
+				display: none;
+			}
+
+			::after {
+				content: '';
+				position: absolute;
+				display: block;
+				background-image: url(/images/separator.png);
+				background-repeat: no-repeat;
+				background-size: 100% 31px;
+				width: 100%;
+				height: 31px;
+				left: 0;
+				bottom: -40px;
+			}
+		}
+	}
 }

@@ -13,11 +13,15 @@ body {
   /*margin-top: 50px;*/ }
 
 .row {
+  position: relative;
   margin-left: 0;
   margin-right: 0; }
   .row div.no-spacing {
     padding-left: 0;
     padding-right: 0; }
+  .row div img {
+    display: inline-block;
+    width: 100%; }
 
 .navbar-default {
   background-color: transparent;
@@ -26,6 +30,15 @@ body {
 .container-fluid {
   padding-left: 0;
   padding-right: 0; }
+
+.vertical-align {
+  display: flex;
+  flex-direction: row; }
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+  display: flex;
+  align-items: center; }
 
 .content p {
   color: #fff;
@@ -84,6 +97,18 @@ nav {
       nav ul.social li .twitter {
         background-image: url("/images/twitter.png"); }
 
+@media screen and (max-width: 767px) {
+  .navbar-collapse ul.nav li {
+    padding-left: 1em; }
+    .navbar-collapse ul.nav li a:link, .navbar-collapse ul.nav li a:visited, .navbar-collapse ul.nav li a:hover, .navbar-collapse ul.nav li a:active {
+      color: #fff; }
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: #fd4be3;
+    border: 1px solid #fff; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff; } }
+
 body {
   padding: 0;
   margin: 0; }
@@ -104,9 +129,10 @@ body {
     max-width: 100%;
     height: 100%;
     background-repeat: no-repeat;
-    background-position: center 370px; }
+    background-position: center 385px; }
 
 .content {
+  overflow: hidden;
   min-height: 730px;
   background-image: url("/images/bg2.png");
   background-repeat: repeat;
@@ -121,12 +147,13 @@ body {
       position: absolute;
       content: '';
       display: inline-block;
-      width: 33%;
+      width: calc(50% - 200px);
       height: 100%;
       background-image: url(/images/separator.png);
-      background-repeat: repeat-x;
+      background-repeat: no-repeat;
       background-position: center;
-      border-radius: 10px; }
+      border-radius: 10px;
+      background-size: 100% 31px; }
     .content .headline-wrapper ::before {
       left: 1em; }
     .content .headline-wrapper ::after {
@@ -157,7 +184,24 @@ body {
 
 @media screen and (max-width: 991px) {
   #hero .hero-content {
-    background-size: contain; } }
+    background-size: contain; }
+  .content .headline-wrapper {
+    position: relative;
+    margin-bottom: 40px; }
+    .content .headline-wrapper ::before,
+    .content .headline-wrapper ::after {
+      display: none; }
+    .content .headline-wrapper ::after {
+      content: '';
+      position: absolute;
+      display: block;
+      background-image: url(/images/separator.png);
+      background-repeat: no-repeat;
+      background-size: 100% 31px;
+      width: 100%;
+      height: 31px;
+      left: 0;
+      bottom: -40px; } }
 
 @media screen and (max-width: 767px) {
   nav .navbar-nav {

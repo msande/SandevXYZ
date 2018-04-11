@@ -1,0 +1,30 @@
+
+
+@media screen and (max-width: $mobile-width) {
+
+	.navbar-collapse {
+		ul.nav {
+			li {
+				padding-left: 1em;
+
+				a:link, a:visited, a:hover, a:active {
+					color: $nav-link-color
+				}
+			}
+		}
+	}
+
+	.navbar-default .navbar-toggle {
+
+	}
+
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover {
+		background-color: $hot-pink;
+		border: 1px solid #fff;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+}
