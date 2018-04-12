@@ -1,25 +1,84 @@
 
+@media screen and (max-width: $tablet-width) {
+	nav{
+		button{
+			display: none;
+		}
+		.nav{
+			margin-right: 115px;
+		}
+	}
+}
+
 @media screen and (max-width: $mobile-width) {
 
-	.navbar-collapse {
-		ul.nav {
-			li {
-				padding-left: 1em;
+	nav {
 
-				a:link, a:visited, a:hover, a:active {
-					color: $nav-link-color
+		&.navbar {
+			.nav {
+				display: none;
+			}
+		}
+
+		button,
+		button:focus {
+			display: block;
+			outline: 1px solid $hot-pink;
+			position: absolute;
+			top: 5px;
+			right: 5px;
+		}
+
+		.navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 75, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+		}
+
+		.navbar-nav {
+			display: block;
+		}
+
+		.navbar-toggle {
+			margin-right: 25px;
+		}
+
+		.navbar-brand {
+			width: 200px;
+		}
+
+		ul.menu {
+			display: none;
+		}
+
+		ul.social {
+			top: 8px;
+			right: 65px;
+			height: inherit;
+			line-height: inherit;
+		}
+
+		.navbar-collapse {
+			.navbar-nav {
+				li {
+					display: block;
+
+					a:link,
+					a:hover,
+					a:visited,
+					a:active {
+						display: block;
+						padding: .5em 1em;
+						color: $nav-link-color;
+					}
+
+					a.link:link,
+					a.visited:link,
+					a.hover:link,
+					a.active:link,
+					a:hover {
+						background-color: $hot-pink;
+					}
 				}
 			}
 		}
-	}
-
-	.navbar-default .navbar-toggle:focus,
-	.navbar-default .navbar-toggle:hover {
-		background-color: $hot-pink;
-		border: 1px solid #fff;
-	}
-
-	.navbar-default .navbar-toggle .icon-bar{
-		background-color: #fff;
 	}
 }
