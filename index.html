@@ -7,16 +7,11 @@
 	<title>Bryan Micon | A Human That Does Things</title>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link href="css/style.min.css" rel="stylesheet" />
-	<!--
-		   ,'`.    _  _    /\    _(_)_
-		  (_,._)  ( `' )  <  >  (_)+(_)
-			/\     `.,'    \/      |
-	-->
 </head>
 <body data-spy="scroll" data-target=".navbar">
 	<div id="page">
 		<nav class="navbar navbar-expand-lg fixed-top">
-			<a class="navbar-brand" href="#"><img src="/images/logo.png" /></a>
+			<a class="navbar-brand" href="#"><img src="/images/logo.png" alt="Bryan Micon" /></a>
 			<ul class="nav nav-pills">
 				<li class="nav-item">
 					<a class="nav-link" href="#crypto">Crypto</a>
@@ -28,7 +23,7 @@
 					<a class="nav-link" href="#drones">Drones</a>
 				</li>
 			</ul>
-			
+
 			<ul class="social">
 				<li><a href="#" class="email"></a></li>
 				<li><a href="https://twitter.com/bryanmicon" target="_blank" class="twitter"></a></li>
@@ -50,51 +45,25 @@
 					</li>
 				</ul>
 			</div>
+
 		</nav>
-		<!--<nav class="navbar navbar-default ">
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<div class="logo">
-							<a href="#"><img src="/images/logo.png" /></a>
-						</div>
-						<ul class="menu">
-							<li><a href="#crypto">Crypto</a></li>
-							<li><a href="#poker">Poker</a></li>
-							<li><a href="#drones">Drones</a></li>
-						</ul>
-						<ul class="social">
-							<li><a href="#" class="email"></a></li>
-							<li><a href="https://twitter.com/bryanmicon" target="_blank" class="twitter"></a></li>
-						</ul>
-					</div>
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="#crypto">Crypto</a></li>
-					<li><a href="#poker">Poker</a></li>
-					<li><a href="#drones">Drones</a></li>
-				</ul>
-			</div>
-		</div>
-		</nav>-->
 		<div id="hero">
 			<div class="hero-content"></div>
 		</div>
-		<div class="content-wrapper">
-			<div class="content">
+
+		<!--Content-->
+		<section class="content-wrapper">
+			<section class="content">
+
+				<!--Crypto-->
 				<div id="crypto"></div>
-				<div class="content-container">
+				<section class="crypto content-container">
 					<div class="headline-wrapper">
 						<div class="headline crytpo-headline"></div>
 					</div>
 					<div class="row vertical-align">
 						<div class="col-md-4 col-sm-4 col-xs-12">
-							<img src="/images/micoin.png" />
+							<img src="/images/micoin.png" alt="Micoin" />
 						</div>
 						<div class="col-md-7 col-sm-7 col-xs-12">
 							<div class="align-middle">
@@ -104,9 +73,11 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+
+				<!--Poker-->
 				<div id="poker"></div>
-				<div class="poker content-container">
+				<section class="poker content-container">
 					<div class="headline-wrapper">
 						<div class="headline poker-headline"></div>
 					</div>
@@ -124,9 +95,11 @@
 							<a href="http://pokerdb.thehendonmob.com/player.php?a=r&n=67931" target="_blank" class="btn">View Lifetime Winnings</a>
 						</div>
 					</div>
-				</div>
+				</section>
+
+				<!--Drones-->
 				<div id="drones"></div>
-				<div class="drones content-container">
+				<section class="drones content-container">
 					<div class="headline-wrapper">
 						<div class="headline drones-headline"></div>
 					</div>
@@ -160,13 +133,13 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</section>
+			</section>
+		</section>
 
 		<footer>
 			<div>
-				Copyright &copy; Bryan Micon 2018
+				Copyright &copy; Bryan Micon <span id="current-year"></span>
 			</div>
 		</footer>
 	</div>
