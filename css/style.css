@@ -5,11 +5,11 @@
 /* font colors */
 @font-face {
   font-family: "Futura Maxi CG";
-  src: url("../fonts/Futura Maxi CG Book Regular.woff"); }
+  src: url("/fonts/Futura Maxi CG Book Regular.woff"); }
 
 @font-face {
   font-family: "Futura Maxi CG Bold";
-  src: url("../fonts/Futura Maxi CG Bold Regular.woff"); }
+  src: url("/fonts/Futura Maxi CG Bold Regular.woff"); }
 
 .row > div {
   /*outline: 1px solid $debug-outline;*/ }
