@@ -1,7 +1,7 @@
 
 nav {
     position: relative;
-    background-image: url('../images/bg-header.png');
+    background-image: url('/images/bg-header.png');
 
     &.navbar {
         padding: 0;
@@ -98,11 +98,11 @@ nav {
             }
 
             .email {
-                background-image: url('../images/email.png');
+                background-image: url('/images/email.png');
             }
 
             .twitter {
-                background-image: url('../images/twitter.png');
+                background-image: url('/images/twitter.png');
             }
         }
     }
