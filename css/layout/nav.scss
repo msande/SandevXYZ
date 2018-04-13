@@ -1,105 +1,109 @@
 
 nav {
-	position: relative;
-	background-image: url('/images/bg-header.png');
+    position: relative;
+    background-image: url('../images/bg-header.png');
 
-	&.navbar {
-		padding: 0;
+    &.navbar {
+        padding: 0;
 
-		.navbar-brand {
-			margin: 0;
-			padding: 0;
-		}
+        .navbar-brand {
+            margin: 0;
+            padding: 0;
+        }
 
-		ul.nav {
-			li {
-				a.nav-link:link,
-				a.nav-link:visited,
-				a.nav-link:hover,
-				a.nav-link:active {
-					color: $nav-link-color;
-					font-size: $nav-font-size;
-					text-decoration: none;
-					text-transform: uppercase;
-				}
+        ul.nav {
+            li {
+                a.nav-link:link,
+                a.nav-link:visited,
+                a.nav-link:hover,
+                a.nav-link:active {
+                    font-family: $futura;
+                    color: $nav-link-color;
+                    font-size: $nav-font-size;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
 
-				a.nav-link.active:link,
-				a.nav-link.active:visited,
-				a.nav-link.active:hover,
-				a.nav-link.active:active {
-					background-color: $hot-pink;
-					border-radius: 0;
-				}
-			}
-		}
-	}
+                a.nav-link:hover,
+                a.nav-link:active,
+                a.nav-link:focus,
+                a.nav-link.active:link,
+                a.nav-link.active:visited,
+                a.nav-link.active:hover,
+                a.nav-link.active:active {
+                    background-color: $hot-pink;
+                    border-radius: 0;
+                }
+            }
+        }
+    }
 
-	.navbar-nav {
-		display: none;
-	}
+    .navbar-nav {
+        display: none;
+    }
 
-	.navbar-brand {
-		display: inline-block;
-		padding: 0 0 0 10px;
+    .navbar-brand {
+        display: inline-block;
+        padding: 0 0 0 10px;
 
-		img {
-			display: inline-block;
-			width: 100%;
-		}
-	}
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+    }
 
-	ul {
-		display: inline-block;
-		padding: 0;
-		margin: 0;
+    ul {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
 
-		li {
-			display: inline-block;
-			padding: 0;
-			margin: 0;
-		}
-	}
+        li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+        }
+    }
 
-	ul.menu {
-		position: relative;
-		top: 4px;
+    ul.menu {
+        position: relative;
+        top: 4px;
 
-		li {
-			display: inline-block;
-			padding: 0;
-			margin: 0 10px;
-		}
-	}
+        li {
+            display: inline-block;
+            padding: 0;
+            margin: 0 10px;
+        }
+    }
 
-	ul.social {
-		position: absolute;
-		top: 0;
-		right: 20px;
-		height: 100%;
-		line-height: 100px;
+    ul.social {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        height: 100%;
+        line-height: 100px;
 
-		li {
-			display: inline-block;
-			width: 42px;
-			height: 34px;
+        li {
+            display: inline-block;
+            width: 42px;
+            height: 34px;
 
-			a,
-			a:focus,
-			a:hover,
-			a:visited {
-				display: block;
-				width: 100%;
-				height: 100%;
-				background-repeat: no-repeat;
-			}
+            a,
+            a:focus,
+            a:hover,
+            a:visited {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+            }
 
-			.email {
-				background-image: url('/images/email.png');
-			}
+            .email {
+                background-image: url('../images/email.png');
+            }
 
-			.twitter {
-				background-image: url('/images/twitter.png');
-			}
-		}
-	}
+            .twitter {
+                background-image: url('../images/twitter.png');
+            }
+        }
+    }
 }

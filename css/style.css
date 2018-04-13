@@ -3,6 +3,14 @@
 /* fonts */
 /* font sizes */
 /* font colors */
+@font-face {
+  font-family: "Futura Maxi CG";
+  src: url("../fonts/Futura Maxi CG Book Regular.woff"); }
+
+@font-face {
+  font-family: "Futura Maxi CG Bold";
+  src: url("../fonts/Futura Maxi CG Bold Regular.woff"); }
+
 .row > div {
   /*outline: 1px solid $debug-outline;*/ }
 
@@ -11,7 +19,7 @@ body {
 
 nav {
   position: relative;
-  background-image: url("/images/bg-header.png"); }
+  background-image: url("../images/bg-header.png"); }
   nav.navbar {
     padding: 0; }
     nav.navbar .navbar-brand {
@@ -21,10 +29,14 @@ nav {
     nav.navbar ul.nav li a.nav-link:visited,
     nav.navbar ul.nav li a.nav-link:hover,
     nav.navbar ul.nav li a.nav-link:active {
+      font-family: "Futura Maxi CG";
       color: #fff;
       font-size: 1.5em;
       text-decoration: none;
       text-transform: uppercase; }
+    nav.navbar ul.nav li a.nav-link:hover,
+    nav.navbar ul.nav li a.nav-link:active,
+    nav.navbar ul.nav li a.nav-link:focus,
     nav.navbar ul.nav li a.nav-link.active:link,
     nav.navbar ul.nav li a.nav-link.active:visited,
     nav.navbar ul.nav li a.nav-link.active:hover,
@@ -73,9 +85,9 @@ nav {
         height: 100%;
         background-repeat: no-repeat; }
       nav ul.social li .email {
-        background-image: url("/images/email.png"); }
+        background-image: url("../images/email.png"); }
       nav ul.social li .twitter {
-        background-image: url("/images/twitter.png"); }
+        background-image: url("../images/twitter.png"); }
 
 @media screen and (max-width: 991px) {
   nav button {
@@ -127,19 +139,19 @@ nav {
 body {
   padding: 0;
   margin: 0;
-  background-image: url("/images/bg2.png");
+  background-image: url("../images/bg2.png");
   background-repeat: repeat; }
 
 #hero {
   height: 880px;
-  background-image: url("/images/bg.jpg");
+  background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   background-position: center top;
   max-width: 100%; }
   #hero .hero-content {
-    background-image: url(/images/logo2.png);
+    background-image: url("../images/logo2.png");
     background-repeat: no-repeat;
     width: 100vw;
     max-width: 100%;
@@ -168,7 +180,7 @@ body {
         display: inline-block;
         width: calc(50% - 200px);
         height: 100%;
-        background-image: url(/images/separator.png);
+        background-image: url("../images/separator.png");
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 10px;
@@ -182,17 +194,17 @@ body {
         display: inline-block;
         width: 100%;
         height: 100px;
-        background-image: url("/images/crypto.png");
+        background-image: url("../images/crypto.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         margin-bottom: 50px; }
       .content-wrapper .content .headline-wrapper .crytpo-headline {
-        background-image: url("/images/crypto.png"); }
+        background-image: url("../images/crypto.png"); }
       .content-wrapper .content .headline-wrapper .poker-headline {
-        background-image: url("/images/poker.png"); }
+        background-image: url("../images/poker.png"); }
       .content-wrapper .content .headline-wrapper .drones-headline {
-        background-image: url("/images/drones.png"); }
+        background-image: url("../images/drones.png"); }
     .content-wrapper .content .content-container {
       margin-bottom: 70px; }
       .content-wrapper .content .content-container .row > div.btn-spacer {
@@ -248,7 +260,7 @@ footer {
   #hero .hero-content {
     background-size: contain; }
   .content-wrapper .content .headline-wrapper {
-    background-image: url(/images/separator.png);
+    background-image: url("../images/separator.png");
     background-position: bottom center;
     background-size: 100% 31px;
     background-repeat: no-repeat;
@@ -329,5 +341,6 @@ footer {
   color: #fff;
   line-height: 1.5em;
   font-size: 1.2em;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-family: "Futura Maxi CG"; }
 
