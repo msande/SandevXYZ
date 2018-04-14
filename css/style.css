@@ -3,17 +3,14 @@
 /* fonts */
 /* font sizes */
 /* font colors */
-/*
 @font-face {
-    font-family: "Futura Maxi CG";
-    src: url("/fonts/Futura Maxi CG Book Regular.woff");
-}
+  font-family: "Futura Maxi CG";
+  src: url("fonts/Futura Maxi CG Book Regular.woff") format("woff"); }
 
 @font-face {
-    font-family: "Futura Maxi CG Bold";
-    src: url("/fonts/Futura Maxi CG Bold Regular.woff");
-}
-*/
+  font-family: "Futura Maxi CG Bold";
+  src: url("fonts/Futura Maxi CG Bold Regular.woff") format("woff"); }
+
 .row > div {
   /*outline: 1px solid $debug-outline;*/ }
 
@@ -345,5 +342,5 @@ footer {
   line-height: 1.5em;
   font-size: 1.2em;
   padding-bottom: 10px;
-  font-family: "Futura Maxi CG"; }
+  font-family: "Futura Maxi CG Bold"; }
 
