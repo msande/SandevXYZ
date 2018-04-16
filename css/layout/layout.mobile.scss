@@ -4,6 +4,8 @@
 	
 	#hero {
 		height: 600px;
+        background-size: cover;
+        min-width: 100%;
 
 		.hero-content {
 			background-size: contain;
