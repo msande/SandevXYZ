@@ -286,9 +286,11 @@ footer {
     background-position: bottom center;
     background-size: 100% 31px;
     background-repeat: no-repeat;
-    margin-bottom: 35px; }
+    margin-bottom: 35px;
+    text-align: center; }
     .content-wrapper .content .headline-wrapper .headline {
-      margin-bottom: 35px; }
+      margin-bottom: 30px;
+      max-width: 65%; }
     .content-wrapper .content .headline-wrapper ::before,
     .content-wrapper .content .headline-wrapper ::after {
       display: none; }
@@ -367,4 +369,14 @@ footer {
   font-size: 1.2em;
   padding-bottom: 10px;
   font-family: "Futura Maxi CG"; }
+
+@media screen and (max-width: 767px) {
+  .content p {
+    line-height: 1.75em;
+    font-size: 1em; }
+  .content a.btn {
+    max-width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    overflow: hidden; } }
 
