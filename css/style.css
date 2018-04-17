@@ -146,7 +146,7 @@ body {
   background-image: url(/images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   width: 100vw;
   max-width: 100%;
   min-width: 100%;
