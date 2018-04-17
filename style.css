@@ -98,15 +98,34 @@ nav {
 @media screen and (max-width: 767px) {
   nav.navbar .nav {
     display: none; }
-  nav button,
-  nav button:focus {
+  nav button.navbar-toggler,
+  nav button.navbar-toggler:focus {
     display: block;
-    outline: 1px solid #fd4be3;
     position: absolute;
     top: 5px;
-    right: 5px; }
-  nav .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 75, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+    right: 5px;
+    border-radius: 0;
+    outline: 0; }
+    nav button.navbar-toggler .navbar-toggler-icon,
+    nav button.navbar-toggler:focus .navbar-toggler-icon {
+      border-radius: 0; }
+  nav button.navbar-toggler.collapsed:active,
+  nav button.navbar-toggler.collapsed:focus,
+  nav button.navbar-toggler.collapsed {
+    outline: 1px solid #fd4be3;
+    background: transparent; }
+    nav button.navbar-toggler.collapsed:active .navbar-toggler-icon,
+    nav button.navbar-toggler.collapsed:focus .navbar-toggler-icon,
+    nav button.navbar-toggler.collapsed .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 75, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+  nav button.navbar-toggler,
+  nav button.navbar-toggler:hover,
+  nav button.navbar-toggler:focus {
+    background-color: #fd4be3; }
+    nav button.navbar-toggler .navbar-toggler-icon,
+    nav button.navbar-toggler:hover .navbar-toggler-icon,
+    nav button.navbar-toggler:focus .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
   nav .navbar-nav {
     display: block; }
   nav .navbar-toggle {

@@ -12,73 +12,96 @@
 
 @media screen and (max-width: $mobile-width) {
 
-	nav {
+    nav {
 
-		&.navbar {
-			.nav {
-				display: none;
-			}
-		}
+        &.navbar {
+            .nav {
+                display: none;
+            }
+        }
 
-		button,
-		button:focus {
-			display: block;
-			outline: 1px solid $hot-pink;
-			position: absolute;
-			top: 5px;
-			right: 5px;
-		}
+        button.navbar-toggler,
+        button.navbar-toggler:focus {
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            border-radius: 0;
+            outline: 0;
 
-		.navbar-toggler-icon {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 75, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-		}
+            .navbar-toggler-icon {
+                border-radius: 0;
+            }
+        }
 
-		.navbar-nav {
-			display: block;
-		}
+        button.navbar-toggler.collapsed:active,
+        button.navbar-toggler.collapsed:focus,
+        button.navbar-toggler.collapsed {
+            outline: 1px solid $hot-pink;
+            background: transparent;
 
-		.navbar-toggle {
-			margin-right: 25px;
-		}
 
-		.navbar-brand {
-			width: 200px;
-		}
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 75, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+        }
 
-		ul.menu {
-			display: none;
-		}
+        button.navbar-toggler,
+        button.navbar-toggler:hover,
+        button.navbar-toggler:focus {
+            background-color: $hot-pink;
 
-		ul.social {
-			top: 8px;
-			right: 65px;
-			height: inherit;
-			line-height: inherit;
-		}
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+        }
 
-		.navbar-collapse {
-			.navbar-nav {
-				li {
-					display: block;
+        .navbar-nav {
+            display: block;
+        }
 
-					a:link,
-					a:hover,
-					a:visited,
-					a:active {
-						display: block;
-						padding: .5em 1em;
-						color: $nav-link-color;
-					}
+        .navbar-toggle {
+            margin-right: 25px;
+        }
 
-					a.link:link,
-					a.visited:link,
-					a.hover:link,
-					a.active:link,
-					a:hover {
-						background-color: $hot-pink;
-					}
-				}
-			}
-		}
-	}
+        .navbar-brand {
+            width: 200px;
+        }
+
+        ul.menu {
+            display: none;
+        }
+
+        ul.social {
+            top: 8px;
+            right: 65px;
+            height: inherit;
+            line-height: inherit;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                li {
+                    display: block;
+
+                    a:link,
+                    a:hover,
+                    a:visited,
+                    a:active {
+                        display: block;
+                        padding: .5em 1em;
+                        color: $nav-link-color;
+                    }
+
+                    a.link:link,
+                    a.visited:link,
+                    a.hover:link,
+                    a.active:link,
+                    a:hover {
+                        background-color: $hot-pink;
+                    }
+                }
+            }
+        }
+    }
 }
