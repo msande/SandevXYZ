@@ -98,25 +98,23 @@ nav {
 @media screen and (max-width: 767px) {
   nav.navbar .nav {
     display: none; }
-  nav button.navbar-toggler,
-  nav button.navbar-toggler:focus {
+  nav button.navbar-toggler {
     display: block;
     position: absolute;
     top: 5px;
     right: 5px;
     border-radius: 0;
     outline: 0; }
-    nav button.navbar-toggler .navbar-toggler-icon,
-    nav button.navbar-toggler:focus .navbar-toggler-icon {
+    nav button.navbar-toggler .navbar-toggler-icon {
       border-radius: 0; }
+  nav button.navbar-toggler.collapsed,
   nav button.navbar-toggler.collapsed:active,
-  nav button.navbar-toggler.collapsed:focus,
-  nav button.navbar-toggler.collapsed {
+  nav button.navbar-toggler.collapsed:focus {
     outline: 1px solid #fd4be3;
     background: transparent; }
+    nav button.navbar-toggler.collapsed .navbar-toggler-icon,
     nav button.navbar-toggler.collapsed:active .navbar-toggler-icon,
-    nav button.navbar-toggler.collapsed:focus .navbar-toggler-icon,
-    nav button.navbar-toggler.collapsed .navbar-toggler-icon {
+    nav button.navbar-toggler.collapsed:focus .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(253, 75, 227, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
   nav button.navbar-toggler,
   nav button.navbar-toggler:hover,
@@ -313,7 +311,9 @@ footer {
       padding: 0;
       margin: 0; }
       .content-wrapper .content .content-container .row > div .youtube-wrapper {
-        padding: 15px; } }
+        padding: 15px; }
+  #crypto, #poker, #drones {
+    bottom: 50px; } }
 
 .row {
   position: relative;
