@@ -6,31 +6,31 @@
 		}
 	}
 
-	.content-wrapper {
-		.content {
-			.headline-wrapper {
-				background-image: url('/images/separator.png');
-				background-position: bottom center;
-				background-size: 100% 31px;
-				background-repeat: no-repeat;
-				margin-bottom: 35px;
+    .content-wrapper {
+        .content {
+            .headline-wrapper {
+                background-image: url('/images/separator.png');
+                background-position: bottom center;
+                background-size: 100% 31px;
+                background-repeat: no-repeat;
+                margin-bottom: 35px;
                 text-align: center;
 
-				.headline {
-					margin-bottom: 30px;
+                .headline {
+                    margin-bottom: 30px;
                     max-width: 65%;
                     background-size: contain;
-				}
+                }
 
-				::before,
-				::after {
-					display: none;
-				}
-			}
+                &::before,
+                &::after {
+                    display: none;
+                }
+            }
 
-			.youtube-wrapper {
-				margin: 1em 0;
-			}
-		}
-	}
+            .youtube-wrapper {
+                margin: 1em 0;
+            }
+        }
+    }
 }
