@@ -5,6 +5,7 @@ nav {
 
     &.navbar {
         padding: 0;
+        min-height: 100px;
 
         .navbar-brand {
             margin: 0;
@@ -17,11 +18,12 @@ nav {
                 a.nav-link:visited,
                 a.nav-link:hover,
                 a.nav-link:active {
-                    font-family: $futura;
+                    font-family: $futura-bold;
                     color: $nav-link-color;
                     font-size: $nav-font-size;
                     text-decoration: none;
                     text-transform: uppercase;
+                    padding: 5px 30px 0;
                 }
 
                 a.nav-link:hover,
@@ -31,7 +33,8 @@ nav {
                 a.nav-link.active:visited,
                 a.nav-link.active:hover,
                 a.nav-link.active:active {
-                    background-color: $hot-pink;
+                    background-color: transparent;
+                    color: $hot-pink;
                     border-radius: 0;
                 }
             }
@@ -49,6 +52,7 @@ nav {
         img {
             display: inline-block;
             width: 100%;
+            padding: 0 0 0 22px;
         }
     }
 

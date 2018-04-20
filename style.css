@@ -21,7 +21,8 @@ nav {
   position: relative;
   background-image: url("/images/bg-header.png"); }
   nav.navbar {
-    padding: 0; }
+    padding: 0;
+    min-height: 100px; }
     nav.navbar .navbar-brand {
       margin: 0;
       padding: 0; }
@@ -29,11 +30,12 @@ nav {
     nav.navbar ul.nav li a.nav-link:visited,
     nav.navbar ul.nav li a.nav-link:hover,
     nav.navbar ul.nav li a.nav-link:active {
-      font-family: "Futura Maxi CG";
+      font-family: "Futura Maxi CG Bold";
       color: #fff;
-      font-size: 1.35em;
+      font-size: 16px;
       text-decoration: none;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding: 5px 30px 0; }
     nav.navbar ul.nav li a.nav-link:hover,
     nav.navbar ul.nav li a.nav-link:active,
     nav.navbar ul.nav li a.nav-link:focus,
@@ -41,7 +43,8 @@ nav {
     nav.navbar ul.nav li a.nav-link.active:visited,
     nav.navbar ul.nav li a.nav-link.active:hover,
     nav.navbar ul.nav li a.nav-link.active:active {
-      background-color: #fd4be3;
+      background-color: transparent;
+      color: #fd4be3;
       border-radius: 0; }
   nav .navbar-nav {
     display: none; }
@@ -50,7 +53,8 @@ nav {
     padding: 0 0 0 10px; }
     nav .navbar-brand img {
       display: inline-block;
-      width: 100%; }
+      width: 100%;
+      padding: 0 0 0 22px; }
   nav ul {
     display: inline-block;
     padding: 0;
@@ -96,8 +100,10 @@ nav {
     margin-right: 115px; } }
 
 @media screen and (max-width: 767px) {
-  nav.navbar .nav {
-    display: none; }
+  nav.navbar {
+    min-height: initial; }
+    nav.navbar .nav {
+      display: none; }
   nav button.navbar-toggler {
     display: block;
     position: absolute;
@@ -130,6 +136,8 @@ nav {
     margin-right: 25px; }
   nav .navbar-brand {
     width: 200px; }
+    nav .navbar-brand img {
+      padding: 0; }
   nav ul.menu {
     display: none; }
   nav ul.social {
@@ -139,19 +147,19 @@ nav {
     line-height: inherit; }
   nav .navbar-collapse .navbar-nav li {
     display: block; }
-    nav .navbar-collapse .navbar-nav li a:link,
-    nav .navbar-collapse .navbar-nav li a:hover,
-    nav .navbar-collapse .navbar-nav li a:visited,
-    nav .navbar-collapse .navbar-nav li a:active {
+    nav .navbar-collapse .navbar-nav li a.nav-link:link,
+    nav .navbar-collapse .navbar-nav li a.nav-link:hover,
+    nav .navbar-collapse .navbar-nav li a.nav-link:visited,
+    nav .navbar-collapse .navbar-nav li a.nav-link:active {
       display: block;
       padding: .5em 1em;
       color: #fff; }
-    nav .navbar-collapse .navbar-nav li a.link:link,
-    nav .navbar-collapse .navbar-nav li a.visited:link,
-    nav .navbar-collapse .navbar-nav li a.hover:link,
-    nav .navbar-collapse .navbar-nav li a.active:link,
-    nav .navbar-collapse .navbar-nav li a:hover {
-      background-color: #fd4be3; } }
+    nav .navbar-collapse .navbar-nav li a.nav-link.active:link,
+    nav .navbar-collapse .navbar-nav li a.nav-link.active:visited,
+    nav .navbar-collapse .navbar-nav li a.nav-link.active:hover,
+    nav .navbar-collapse .navbar-nav li a.nav-link.active:active {
+      background-color: transparent;
+      color: #fd4be3; } }
 
 body {
   padding: 0;
@@ -198,7 +206,7 @@ body {
         position: absolute;
         content: '';
         display: inline-block;
-        width: calc(50% - 200px);
+        width: calc(50% - 165px);
         height: 100%;
         background-image: url("/images/separator.png");
         background-repeat: no-repeat;
@@ -216,7 +224,7 @@ body {
         height: 100px;
         background-image: url("/images/crypto.png");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: 250px;
         background-position: center;
         margin-bottom: 50px; }
       .content-wrapper .content .headline-wrapper .crytpo-headline {
@@ -256,7 +264,7 @@ body {
 
 #crypto, #poker, #drones {
   position: relative;
-  bottom: 100px; }
+  bottom: 120px; }
 
 footer {
   background-color: #000; }
@@ -288,7 +296,8 @@ footer {
     text-align: center; }
     .content-wrapper .content .headline-wrapper .headline {
       margin-bottom: 30px;
-      max-width: 65%; }
+      max-width: 65%;
+      background-size: contain; }
     .content-wrapper .content .headline-wrapper ::before,
     .content-wrapper .content .headline-wrapper ::after {
       display: none; }
@@ -364,16 +373,16 @@ footer {
   color: #ff00da; }
 
 .content p {
-  color: #fff;
-  line-height: 1.9em;
-  font-size: 1.2em;
+  color: #e0e0e0;
+  line-height: 30px;
+  font-size: 18px;
   padding-bottom: 10px;
   font-family: "Futura Maxi CG"; }
 
 @media screen and (max-width: 767px) {
   .content p {
-    line-height: 1.75em;
-    font-size: 1em; }
+    line-height: 26px;
+    font-size: 16px; }
   .content a.btn {
     max-width: 100%;
     text-overflow: ellipsis;

@@ -51,7 +51,7 @@ body {
 				position: absolute;
 				content: '';
 				display: inline-block;
-				width: calc(50% - 200px);
+				width: calc(50% - 165px);
 				height: 100%;
 				background-image: url('/images/separator.png');
 				background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body {
 				height: 100px;
 				background-image: url('/images/crypto.png');
 				background-repeat: no-repeat;
-				background-size: contain;
+				background-size: 250px;
 				background-position: center;
 				margin-bottom: 50px;
 			}
@@ -147,7 +147,7 @@ body {
 
 #crypto, #poker, #drones{
 	position: relative;
-	bottom: 100px;
+	bottom: 120px;
 }
 
 footer {
