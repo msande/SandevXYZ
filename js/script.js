@@ -7,5 +7,5 @@ $(function () {
 	});
 
 	// populate current year in footer
-	$('#current-year').text((new Date()).getFullYear());
+    $('#current-year').text((new Date()).getFullYear());
 });
